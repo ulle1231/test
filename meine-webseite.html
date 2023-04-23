@@ -1,0 +1,10 @@
+<form>
+  <label for="input">Eingabe:</label>
+  <input type="text" id="input" name="input"><br><br>
+  <input type="button" value="Absenden" onclick="submitForm()">
+</form>
+<div id="output"></div>
+function submitForm() {
+  var input = document.getElementById("input").value;
+  document.getElementById("output").innerHTML = "Deine Eingabe war: " + input;
+}
